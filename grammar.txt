@@ -1,0 +1,23 @@
+<methodstmt> -> void ident '('')' <block>
+<block> -> '{' { <statement> } '}'
+<statement> ->  <ifstmt> | <whilestmt> |<forstmt> | <switchstmt> | <dowhilestmt> | 
+		<assignstmt> ';' | <foreachstmt> | <methodstmt> | <expr> 
+<ifstmt> -> if (<boolexpr>) <block> [else <block>]
+<whilestmt> -> while '(' <boolexpr> ')' <block> 
+<forstmt> -> for (<expr>; <boolexpr>; <expr>) <block>
+<switchstmt> -> switch '(' <expr> ')' '{' {case literal : <statement>} [default: <statement>] '}'
+<dowhilestmt> -> do <block> while '(' <boolexpr> ')' ';'
+<assignstmt> -> ident [ident] '=' <expr> ';'
+<foreachstmt> -> foreach '(' ident ident in ident ')' <block> 
+<boolexpr> -> <expr> (<|>|<=|>=|==|!=) <expr> 
+<expr> -> <term> (+|-) <term> ';'
+<term> -> <factor> (*|/|%) <factor>
+<factor> -> ident | int_lit | float_lit | '(' <expr> ')'
+
+*I used C# for the syntax of the foreach statement and C for everything else
+
+
+
+
+
+
