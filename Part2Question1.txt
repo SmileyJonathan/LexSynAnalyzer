@@ -1,0 +1,97 @@
+a. abbbccd
+Step 1	0			abbbcccd$ 	s2
+2	0a			bbbccd$		s8
+3	0a2b8			bbccd$		s8
+4	0a2b8b8 		bccd$		s8
+5	0a2b8b8b8		ccd$		s17
+6	0a2b8b8b8c17		cd$		s21
+7	0a2b8b8b8c17c21		d$		s22
+8	0a2b8b8b8c17c12d22	$		
+
+
+
+b. accd
+Step 1	0		accd$ 	s2
+2	0a		ccd$	s6
+3	0a2c6		cd$	s14
+4	0a2c6c14 	d$	s15
+5	0a2c6c14d15	$	r8
+6	0a2c6c14C	$	19
+7	0a2c6c14C19	$	r7
+8	0a2c6C		$	13
+9	0a2c6C13	$	r7
+10	0a2C		$	4
+11	0a2C4		$	r1
+12	0S		$	1
+13	0S1		$	accept
+
+c. acdbaacd
+Step 1	0			acdbaacd$ 	s2
+2	0a2			cdbaacd$	s6
+3	a2c6			dbaacd$		s15
+4	0a2c6d15		baacd$		r8
+5	0a2c6C 			baacd$		13
+6	0a2c6C13		baacd$		r6
+7	0a2B			baacd$		5
+8	0a2B5			baacd$		s12
+9	0a2B5b12		aacd$		r3
+10	0A			aacd$		3
+11	0A3			aacd$		s10
+12	0A3a10			acd$		r4
+13	0A			acd$		3
+14	0A3			acd$		s10
+15	0A3a10			cd$		r4
+16	0A			cd$		3
+17	0A3			cd$		s11
+18	0A3c11			d$		s7
+19	0A3c11d7		$		r8
+20	0A3c11C			$		18
+21	0A2c11C18		$		r7
+22	0A3C			$		9
+23	0A3C9			$		r2
+24	0S			$		1
+25	0S1			$		accept
+
+d. acdbd
+Step 1	0			acdbd$ 		s2
+2	0a2			cdbd$	s6
+3	a2c6			dbd$		s15
+4	0a2c6d15		bd$		r8
+5	0a2c6C 			bd$		13
+6	0a2c6C13		bd$		r6
+7	0a2B			bd$		5
+8	0a2B5			bd$		s12
+9	0a2B5b12		d$		r3
+10	0A			d$		3
+11	0A3			d$		s7
+12	0A3d7			$		r8
+13	0A3C			$		9
+14	0A3C9			$		r2
+15	0S			$		1
+16	0S1			$		accept
+
+e. abcdbad
+Step 1	0		abcdbad$ 	s2
+2	0a		bcdbad$		s8
+3	0a2b8		cdbad$		s17
+4	0a2b8c17 	dbad$		s22
+5	0a2b8c17d22	bad$		r8
+6	0a2b8c17C	bad$		20
+7	0a2b8c17C20	bad$		r6
+8	0a2b8B		bad$		16
+9	0a2b8B16	bad$		r5
+10	0a2B		bad$		5
+11	0a2B5		bad$		s12
+12	0a2B5b12	ad$		r3
+13	0A		ad$		3
+14	0A3		ad$		s10
+15	0A3a10		d$		r4
+16	0A		d$		3
+17	0A3		d$		s7
+18	0A3d7		$		r8
+19	0A3C		$		9
+20	0A3C9		$		r2
+21	0S		$		1
+22	0S1		$		accept
+
+   
